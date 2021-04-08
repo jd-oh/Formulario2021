@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Registro Persona" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Formulario Persona</title>
-    <h1>Formulario</h1>
 </head>
+
 <body>
-    <h2>Datos Personales</h2>
+    <header>
+        <h1>Formulario Oferta Laboral</h1>
+
+    </header>
+    <nav>
+        <h2>Datos Personales</h2>
+    </nav>
+
+    <form>
+        <label>Nombres: </label><input type="text" id="nombres" size="40">
+        </br></br>
+        <label>Apellidos: </label><input type="text" id="apellidos" size="40"></br></br>
+        <label>Tipo de documento:</label>
+        <input list="listaDocumentos" id="documentos" />
+        <datalist id="listaDocumentos">
+            <option value="Cédula de ciudadanía">
+            <option value="Cédula de extrangería">
+            <option value="Tarjeta de identidad">
+            <option value="Pasaporte">
+        </datalist>
+        <br><br>
+        <label>Documento: </label><input type="text" id="documento" size="40"></br></br>
+        <label>Correo electrónico: </label><input type="email" id="correo" size="40"></br></br>
+        <label>Número de teléfono: </label><input type="tel" id="telefono" size="40"></br></br>
+        <label>Fecha de nacimiento: </label><input type="date" id="nacimiento" size="40"><br><br>
+        <label>Ciudad: </label><input type="text" id="ciudad" size="40"><br><br>
+        <label>Sexo:</label>
+        <input type="radio" id="hm" value="h"> Hombre
+        <input type="radio" id="hm" value="m"> Mujer
+        <br><br>
+        <label>Contraseña: </label><input type="password" id="contraseña" size="40"></br></br>
+
+        <input type="submit" id="enviar">
+
+
+        <input type="reset" id="borrar">
+
+
+    </form>
 </body>
+
 </html>
