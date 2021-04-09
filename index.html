@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Registro Persona" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
     <title>Formulario Persona</title>
 </head>
 
@@ -15,40 +16,52 @@
 
     </header>
     <nav>
-        <h2>Datos Personales</h2>
+        <h2>Formulario para Persona</h2>
     </nav>
 
-    <form>
-        <label>Nombres: </label><input type="text" id="nombres" size="40">
-        </br></br>
-        <label>Apellidos: </label><input type="text" id="apellidos" size="40"></br></br>
-        <label>Tipo de documento:</label>
-        <input list="listaDocumentos" id="documentos" />
-        <datalist id="listaDocumentos">
-            <option value="Cédula de ciudadanía">
-            <option value="Cédula de extrangería">
-            <option value="Tarjeta de identidad">
-            <option value="Pasaporte">
-        </datalist>
-        <br><br>
-        <label>Documento: </label><input type="text" id="documento" size="40"></br></br>
-        <label>Correo electrónico: </label><input type="email" id="correo" size="40"></br></br>
-        <label>Número de teléfono: </label><input type="tel" id="telefono" size="40"></br></br>
-        <label>Fecha de nacimiento: </label><input type="date" id="nacimiento" size="40"><br><br>
-        <label>Ciudad: </label><input type="text" id="ciudad" size="40"><br><br>
-        <label>Sexo:</label>
-        <input type="radio" id="hm" value="h"> Hombre
-        <input type="radio" id="hm" value="m"> Mujer
-        <br><br>
-        <label>Contraseña: </label><input type="password" id="contraseña" size="40"></br></br>
-
-        <input type="submit" id="enviar">
-
-
-        <input type="reset" id="borrar">
-
-
+    <form action="" class="formulario" id="formulario">
+        <h2>Datos personales</h2>
+        <p class="advertencia" id="advertencia"></p>
+        <div>
+            <label>Nombres: </label>
+            <input type="text" class="formulario_input" name="nombres"id="nombres" size="40">
+            </br></br>
+            <label>Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" class="formulario_input" size="40"></br></br>
+            <label>Tipo de documento:</label>
+            <input list="listaDocumentos" class="formulario_input" name="tipo de documento"id="documentos" size="40" />
+            <datalist id="listaDocumentos">
+                <option value="Cédula de ciudadanía">
+                <option value="Cédula de extrangería">
+                <option value="Tarjeta de identidad">
+                <option value="Pasaporte">
+            </datalist>
+            <br><br>
+            <label>Documento: </label>
+            <input type="text" class="formulario_input" name="número de documento" id="documento" size="40"></br></br>
+            <label>Correo electrónico: </label>
+            <input type="email" class="formulario_input" name="correo"id="correo" size="40"></br></br>
+            <label>Número de teléfono: </label>
+            <input type="tel" class="formulario_input" name="número de teléfono"id="telefono" size="40"></br></br>
+            <label>Fecha de nacimiento: </label>
+            <input type="date" class="formulario_input" name="fecha de nacimiento" id="nacimiento" size="40"><br><br>
+            <label>Ciudad: </label>
+            <input type="text" class="formulario_input" name="ciudad"id="ciudad" size="40"><br><br>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" value="h"> Hombre
+            <input type="radio" name="sexo" value="m"> Mujer
+            <br><br>
+            <label>Sobre mi: </label>
+            <textarea placeholder="¿Qué tienes para decir sobre ti?" name="'sobre mi'" rows="10"
+                cols="40"></textarea></br></br>
+            <label>Contraseña: </label>
+            <input type="password" class="formulario_input" name="contraseña"id="contraseña" size="40"></br></br>
+            <input type="submit" id="enviar">
+            <input type="reset" id="borrar">
+            
+        </div>
     </form>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

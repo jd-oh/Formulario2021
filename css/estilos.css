@@ -1,4 +1,4 @@
-html{
+*{
     font-family:  'Trebuchet MS';
 }
 
@@ -11,6 +11,7 @@ header {
     padding: 16px;
     border:black;
     border-style: groove;
+    box-shadow: 0 0 20px black;
     
 }	
 
@@ -22,6 +23,7 @@ nav{
     padding: 1px;
     border: rgb(59, 3, 3);
     border-style: groove;
+    box-shadow: 0 0 40px black;
 
 }
 
@@ -32,12 +34,13 @@ body{
 }
 
 
-form{
+.formulario{
 	width:600px;
 	padding:16px;
 	border:black;
 	background-color:rgb(255, 242, 242);
     border-style: groove;
+    box-shadow: 0 0 40px;
 }
 
 label{
@@ -62,6 +65,14 @@ input{
     margin: 1px
 } 
 
-#listaDocumentos{
-    width:100%;
+textarea {
+    resize: none;
+  }
+
+.advertencia{
+    width: 200px;
+    margin:auto;
+    color:red;
+    padding-top:5px;
 }
+
